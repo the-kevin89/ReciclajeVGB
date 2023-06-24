@@ -1,1 +1,98 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: rgb(40, 150, 70);
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Inicialmente oculto fuera del área visible */
+    width: 300px;
+    height: 100%;
+    background-color: rgb(58, 183, 97);
+    transition: left 0.3s ease-in-out;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul li a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+#menu ul li a:hover {
+    background-color: rgb(98, 213, 138);
+}
+
+#menu.open {
+    left: 0; /* Mostrar el menú desplazándolo hacia la derecha */
+}
+
+#btn-menu, #btn-cerrar, #btn-cuenta {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#btn-menu {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+#btn-cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+#btn-cuenta {
+    display: flex;
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 115px;
+    justify-content: center;
+}
+
+#btn-cuenta:hover {
+    border-color: #81d4fd;
+    color: #81d4fd;
+}
+
+#logo {
+    width: 120px;
+    display: block;
+    margin: 20px auto;
+}
