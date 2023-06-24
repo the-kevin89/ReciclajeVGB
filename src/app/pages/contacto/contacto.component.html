@@ -3,13 +3,16 @@
 
     <form action="" method="post">
         <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" required><br><br>
+        <input type="text" name="nombre" id="nombre" maxlength="50" required><br><br>
 
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required><br><br>
+        <input type="email" name="email" id="email" maxlength="50" required><br><br>
+
+        <label for="asunto">Asunto:</label>
+        <input type="text" name="asunto" id="asunto" maxlength="50" required><br><br>
 
         <label for="mensaje">Mensaje:</label><br>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea><br><br>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="5" maxlength="1500" required></textarea><br><br>
 
         <button type="submit">Enviar</button>
     </form>
