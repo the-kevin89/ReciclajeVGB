@@ -9,6 +9,8 @@ import { AreasContaminadasComponent } from './pages/areas-contaminadas/areas-con
 import { ReciclarBasuraComponent } from './pages/reciclar-basura/reciclar-basura.component';
 import { MotivarAyudarComponent } from './pages/motivar-ayudar/motivar-ayudar.component';
 import { ForoIdeasComponent } from './pages/foro-ideas/foro-ideas.component';
+import { RegistroComponent } from './pages/registro/registro.component';
+import { InicioSesionComponent } from './pages/inicio-sesion/inicio-sesion.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ForoIdeasComponent } from './pages/foro-ideas/foro-ideas.component';
     AreasContaminadasComponent,
     ReciclarBasuraComponent,
     MotivarAyudarComponent,
-    ForoIdeasComponent
+    ForoIdeasComponent,
+    RegistroComponent,
+    InicioSesionComponent
   ],
   imports: [
     BrowserModule,
