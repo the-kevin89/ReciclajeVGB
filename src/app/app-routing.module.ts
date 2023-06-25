@@ -6,7 +6,6 @@ import { AreasContaminadasComponent } from './pages/areas-contaminadas/areas-con
 import { ReciclarBasuraComponent } from './pages/reciclar-basura/reciclar-basura.component';
 import { MotivarAyudarComponent } from './pages/motivar-ayudar/motivar-ayudar.component';
 import { ForoIdeasComponent } from './pages/foro-ideas/foro-ideas.component';
-import { ContactoComponent } from './pages/contacto/contacto.component';
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
@@ -16,7 +15,6 @@ const routes: Routes = [
   { path: 'reciclar-basura', component: ReciclarBasuraComponent },
   { path: 'motivar-ayudar', component: MotivarAyudarComponent },
   { path: 'foro-ideas', component: ForoIdeasComponent },
-  { path: 'contacto', component: ContactoComponent },
   { path: '**', redirectTo: 'inicio' }
 ];
 
