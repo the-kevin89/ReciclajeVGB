@@ -1,24 +1,24 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     display: flex;
     background-color: rgb(40, 150, 70);
-    align-items: center;
     justify-content: space-between;
     color: #fff;
     padding: 25px;
+    align-items: center;
 }
 
 h1 {
-    font-size: 50px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 0;
+    font-size: 50px;
 }
 
 a {
@@ -37,6 +37,7 @@ a {
 
 #menu ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 #menu ul li a {
@@ -54,7 +55,7 @@ a {
     left: 0; /* Mostrar el menú desplazándolo hacia la derecha */
 }
 
-#btn-menu, #btn-cerrar, #btn-cuenta {
+#btn-menu, #btn-cerrar, #btn-cuenta, #btn-cuenta button {
     background: none;
     border: none;
     color: #fff;
@@ -63,8 +64,6 @@ a {
 
 #btn-menu {
     font-size: 40px;
-    width: 40px;
-    height: 40px;
 }
 
 #btn-cerrar {
@@ -72,27 +71,39 @@ a {
     top: 10px;
     right: 10px;
     font-size: 30px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 #btn-cuenta {
-    display: flex;
     border: 1px solid #fff;
     font-size: 20px;
-    padding: 10px;
     border-radius: 10px;
-    width: 115px;
-    justify-content: center;
+    height: fit-content;
 }
 
-#btn-cuenta:hover {
+#btn-cuenta:hover, #btn-cuenta button:hover {
     border-color: #81d4fd;
     color: #81d4fd;
+}
+
+#btn-cuenta button {
+    padding: 10px;
 }
 
 #logo {
     width: 120px;
     display: block;
     margin: 20px auto;
+}
+
+footer {
+    background-color: rgb(40, 150, 70);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 0;
 }

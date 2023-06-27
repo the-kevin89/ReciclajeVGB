@@ -1,7 +1,7 @@
 <header *ngIf="shouldShow()">
   <button id="btn-menu" (click)="openMenu()"><i class="fa-solid fa-bars"></i></button>
   <h1>ReciclajeVGB</h1>
-  <a routerLink="registro"><button id="btn-cuenta"><i class="fa-solid fa-user"></i>Cuenta</button></a>
+  <a routerLink="registro" id="btn-cuenta"><button><i class="fa-solid fa-user"></i> Cuenta</button></a>
   <nav [ngClass]="{'open': isMenuOpen}" id="menu">
       <button id="btn-cerrar" (click)="closeMenu()"><i class="fa-solid fa-xmark"></i></button>
       <img src="../../assets/logo.png" alt="Logo" id="logo">
@@ -20,4 +20,6 @@
   <router-outlet></router-outlet>
 </main>
 
-<footer *ngIf="shouldShow()"></footer>
+<footer *ngIf="shouldShow()">
+  <p>&copy; 2023 ReciclajeVGB. Todos los derechos reservados.</p>
+</footer>
