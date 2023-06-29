@@ -4,9 +4,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --color-principal: #289646;
+    --color-principal-highlight: #3fb45e;
+
+
+    --text-color-highlight-hover: #81d4fd;
+  }
+
+
 header {
     display: flex;
-    background-color: rgb(40, 150, 70);
+    background-color: var(--color-principal);
     justify-content: space-between;
     color: #fff;
     padding: 25px;
@@ -31,7 +40,7 @@ a {
     left: -300px; /* Inicialmente oculto fuera del área visible */
     width: 300px;
     height: 100%;
-    background-color: rgb(58, 183, 97);
+    background-color: var(--color-principal);
     transition: left 0.3s ease-in-out;
 }
 
@@ -48,7 +57,7 @@ a {
 }
 
 #menu ul li a:hover {
-    background-color: rgb(98, 213, 138);
+    background-color: var(--color-principal-highlight);
 }
 
 #menu.open {
@@ -68,7 +77,7 @@ a {
 }
 
 #btn-menu:hover{
-    color: #81d4fd;
+    color: var(--text-color-highlight-hover);
 }
 
 #btn-cerrar {
@@ -88,8 +97,8 @@ a {
 }
 
 #btn-cuenta:hover, #btn-cuenta button:hover {
-    border-color: #81d4fd;
-    color: #81d4fd;
+    border-color: var(--text-color-highlight-hover);
+    color: var(--text-color-highlight-hover);
 }
 
 #btn-cuenta button {
@@ -102,8 +111,9 @@ a {
     margin: 20px auto;
 }
 
+
 footer {
-    background-color: rgb(40, 150, 70);
+    background-color: var(--color-principal);
     color: #fff;
     text-align: center;
     padding: 20px;
