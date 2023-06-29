@@ -62,8 +62,13 @@ a {
     cursor: pointer;
 }
 
+
 #btn-menu {
     font-size: 40px;
+}
+
+#btn-menu:hover{
+    color: #81d4fd;
 }
 
 #btn-cerrar {
@@ -102,6 +107,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 footer p {
