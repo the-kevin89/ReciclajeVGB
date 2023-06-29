@@ -1,66 +1,80 @@
-#elNombre{
-    margin-top: 10px;
+.close-btn {
+    color: #000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    line-height: 0;
 }
 
-.contenedor {
+.close-btn i {
+    font-size: 60px;
+    line-height: normal;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.form-login {
     background-color: #289646;
-    max-width: fit-content;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 30px;
     color: #fff;
-    padding: 20px;
-    border-radius: 15px;
+    box-shadow: 7px 13px 37px #000;
 }
 
-a {
-    color: violet;
-}
-
-a:hover {
-    color: purple;
-}
-
-input {
-    width: 100%;
-    padding: 5px;
+.form-login h4 {
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
-button {
+.control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 2px solid #ccc;
+    font-size: 18px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.control:focus {
+    outline: none;
+    border-color: #289646;
+}
+
+.form-login p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-login a {
     color: #fff;
-    background-color:#289646;
-    padding: 5px 10px;
-    bottom: 20.7%;
-    position: fixed;
+}
+
+.form-login a:hover {
+    text-decoration: underline;
+}
+
+.form-login .form-btn {
+    width: 100%;
+    background-color: #34a853;
     border: none;
-    height: 10%;
-    width: 23.63%;
-    margin-top: 10px;
-    border-radius: 15px;
+    padding: 12px;
+    color: #fff;
+    margin: 16px 0;
+    transition: background-color 0.3s ease;
 }
 
-button#escapar {
-    left: 26.25%;
-}
-
-button#escapar:hover, button#enviar:hover {
+.form-login .form-btn:hover {
     background-color: #3fb45e;
 }
 
-button#enviar {
-    right: 26.25%;
-}
-
-#si {
-    width: 1%;
-}
-
-button a {
-    color: #fff;
-}
-
-h2 {
-    margin-bottom: 10px;
+.form-login, .control, .form-btn {
+    border-radius: 4px;
 }
