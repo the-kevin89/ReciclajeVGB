@@ -1,0 +1,16 @@
+*   {
+    --margin-aña: 10px;
+}
+
+#nombreRegister{
+    margin-left: var(--margin-aña);
+}
+#emailRegister{
+    margin-left: var(--margin-aña);
+}
+#contrasenaRegister{
+    margin-left: var(--margin-aña);
+}
+#contrasenaRegister2{
+    margin-left: var(--margin-aña);
+}
