@@ -1,0 +1,10 @@
+*   {
+    --margin-aña: 10px;
+}
+
+#nombreEmailLogin{
+    margin-left: var(--margin-aña);
+}
+#contrasenaLogin{
+    margin-left: var(--margin-aña);
+}
