@@ -71,7 +71,6 @@ a {
     cursor: pointer;
 }
 
-
 #btn-menu {
     font-size: 40px;
 }
@@ -118,7 +117,6 @@ footer {
     text-align: center;
     padding: 20px;
     bottom: 0;
-    position: fixed;
     left: 0;
     right: 0;
 }
