@@ -1,18 +1,22 @@
-<h2>Registrarse</h2>
+<div class="contenedor">
+    <h2>Registrarse</h2>
 
-<a routerLink="../inicio-sesion">¿Ya tiene una cuenta? Iniciar sesión</a>
-<form action="" method="post">
-    <label for="nombre">Nombre de usuario</label>
-    <input type="text" name="nombreRegister" id="nombreRegister" maxlength="25" required><br><br>
+    <a routerLink="../inicio-sesion">¿Ya tiene una cuenta? Iniciar sesión</a>
+    <form action="" method="post">
+        <label for="nombreRegister" id="elNombre">Nombre de usuario</label>
+        <input type="text" name="nombreRegister" id="nombreRegister" maxlength="25" required>
 
-    <label for="email">Correo electrónico</label>
-    <input type="email" name="emailRegister" id="emailRegister" required><br><br>
+        <label for="emailRegister">Correo electrónico</label>
+        <input type="email" name="emailRegister" id="emailRegister" maxlength="50" required>
 
-    <label for="contrasena">Contraseña</label>
-    <input type="password" name="contrasenaRegister" id="contrasenaRegister" required><br><br>
+        <label for="contrasenaRegister">Contraseña</label>
+        <input type="password" name="contrasenaRegister" id="contrasenaRegister" maxlength="127" required>
 
-    <label for="contrasena2">Confirmar contraseña</label>
-    <input type="password" name="contrasenaRegister2" id="contrasenaRegister2"><br><br>
+        <label for="contrasenaRegister2">Confirmar contraseña</label>
+        <input type="password" name="contrasenaRegister2" id="contrasenaRegister2" maxlength="127" required>
+    </form>
+</div>
 
-    <button type="submit"><i class="fa fa-check"></i> Enviar</button>
-</form>
+<a routerLink="inicio"><button type="button" id="escapar"><i class="fa-solid fa-xmark"></i> Escapar</button></a>
+<div id="si"></div>
+<button type="submit" id="enviar"><i class="fa fa-check"></i> Enviar</button>

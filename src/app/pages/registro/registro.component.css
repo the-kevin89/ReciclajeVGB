@@ -1,16 +1,66 @@
-*   {
-    --margin-aña: 10px;
+#elNombre{
+    margin-top: 10px;
 }
 
-#nombreRegister{
-    margin-left: var(--margin-aña);
+.contenedor {
+    background-color: #289646;
+    max-width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
 }
-#emailRegister{
-    margin-left: var(--margin-aña);
+
+a {
+    color: violet;
 }
-#contrasenaRegister{
-    margin-left: var(--margin-aña);
+
+a:hover {
+    color: purple;
 }
-#contrasenaRegister2{
-    margin-left: var(--margin-aña);
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    color: #fff;
+    background-color:#289646;
+    padding: 5px 10px;
+    bottom: 10%;
+    position: fixed;
+    border: none;
+    height: 10%;
+    width: 24.9%;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+button#escapar {
+    left: 25%;
+}
+
+button#escapar:hover, button#enviar:hover {
+    background-color: #3fb45e;
+}
+
+button#enviar {
+    right: 25%;
+}
+
+#si {
+    width: 1%;
+}
+
+button a {
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 10px;
 }

@@ -1,12 +1,16 @@
-<h2>Iniciar sesión</h2>
+<div class="contenedor">
+    <h2>Iniciar sesión</h2>
 
-<a routerLink="../registro">¿No tiene una cuenta? Registrarse</a>
-<form action="" method="post">
-    <label for="nombre">Nombre de usuario o email</label>
-    <input type="text" name="nombreEmailLogin" id="nombreEmailLogin" required><br><br>
+    <a routerLink="../registro">¿No tiene una cuenta? Registrarse</a>
+    <form action="" method="post">
+        <label for="nombreEmailLogin" id="elNombre">Nombre de usuario o email</label>
+        <input type="text" name="nombreEmailLogin" id="nombreEmailLogin" maxlength="50" required>
 
-    <label for="contrasena">Contraseña</label>
-    <input type="password" name="contrasenaLogin" id="contrasenaLogin" required><br><br>
+        <label for="contrasenaLogin">Contraseña</label>
+        <input type="password" name="contrasenaLogin" id="contrasenaLogin" maxlength="127" required>
+    </form>
+</div>
 
-    <button type="submit"><i class="fa fa-check"></i> Enviar</button>
-</form>
+<a routerLink="inicio"><button type="button" id="escapar"><i class="fa-solid fa-xmark"></i> Escapar</button></a>
+<div id="si"></div>
+<button type="submit" id="enviar"><i class="fa fa-check"></i> Enviar</button>
