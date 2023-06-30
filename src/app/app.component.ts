@@ -10,8 +10,8 @@ export class AppComponent {
   isMenuOpen: boolean = false;
 
   shouldShow(): boolean {
-    const currentUrl = this.router.url;
-    return !(currentUrl.includes('/inicio-sesion') || currentUrl.includes('/registro'));
+    const currentURL = this.router.url;
+    return !(currentURL.includes('/iniciar-sesion') || currentURL.includes('/registro'));
   }
 
   openMenu() {

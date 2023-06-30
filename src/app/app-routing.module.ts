@@ -7,7 +7,7 @@ import { ReciclarBasuraComponent } from './pages/reciclar-basura/reciclar-basura
 import { MotivarAyudarComponent } from './pages/motivar-ayudar/motivar-ayudar.component';
 import { ForoIdeasComponent } from './pages/foro-ideas/foro-ideas.component';
 import { RegistroComponent } from './pages/registro/registro.component';
-import { InicioSesionComponent } from './pages/inicio-sesion/inicio-sesion.component';
+import { IniciarSesionComponent } from './pages/iniciar-sesion/iniciar-sesion.component';
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'motivar-ayudar', component: MotivarAyudarComponent },
   { path: 'foro-ideas', component: ForoIdeasComponent },
   { path: 'registro', component: RegistroComponent },
-  { path: 'inicio-sesion', component: InicioSesionComponent },
+  { path: 'iniciar-sesion', component: IniciarSesionComponent },
   { path: '**', redirectTo: 'inicio' }
 ];
 
