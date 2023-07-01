@@ -1,5 +1,7 @@
 # ReciclajeVGB
 
+⩥ Video: https://www.youtube.com/watch?v=KF3eAOVzgwM
+
 La aplicación web trata sobre la concientización del reciclaje en Villa General Belgrano.
 
 ## Carpetas y archivos
