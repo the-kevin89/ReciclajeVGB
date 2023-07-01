@@ -96,7 +96,7 @@ h1 {
 
 
 .contenedor {
-    background-color: #f1f1f1;
+    background-color: #eee;
     margin: 2.5% 15%;
     padding: 30px;
     border-radius: 4px;
@@ -217,11 +217,46 @@ footer p {
     width: 400px;
     padding: 30px;
     background-color: #289646;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.329);
 }
 
 #panel-de-mensaje {
-    width: 300px;
+    background-color: #289646;
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+    width: 340px;
+    margin-bottom: 10px;
 }
 #panel-de-mensaje2 {
-    height: auto;
+    background-color: #289646;
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+    width: 340px;
+    margin-bottom: 15px;
+}
+#enviar-mensaje {
+    background-color: #289646;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#enviar-mensaje:hover {
+    border-color: #81d4fd;
+    color: #81d4fd;
+}
+
+#panel-de-mensaje::placeholder{
+    color: #fff;
+}
+#panel-de-mensaje2::placeholder{
+    color: #fff;
 }

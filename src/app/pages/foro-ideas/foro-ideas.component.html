@@ -4,11 +4,11 @@
     <form id="tu-mensaje" action="" method="post">
         <input type="text" name="panel-de-titulo" id="panel-de-mensaje" placeholder="Titulo" maxlength="280" required>
         
-        <input type="text" name="panel-de-nombre-de-usuario" id="panel-de-mensaje" placeholder="Nombre de usuario (opcional)" maxlength="20" required>
+        <input type="text" name="panel-de-nombre-de-usuario" id="panel-de-mensaje" placeholder="Nombre de usuario (opcional)" maxlength="20">
         
-        <input type="text" name="panel-de-mensaje" id="panel-de-mensaje2" placeholder="Escriba un mensaje..." maxlength="280" required>
+        <textarea name="panel-de-mensaje" id="panel-de-mensaje2" placeholder="Escriba un mensaje..." rows="4" cols="50"></textarea>
 
-        <button type="submit" class="form-btn">Enviar</button>
+        <button type="submit" id="enviar-mensaje" class="form-btn">Enviar</button>
     </form>
     <article class="post">
         <h4 id="titulo">Título</h4>
