@@ -1,6 +1,12 @@
 /* Estilos comunes */
 
+body {
+    background-image: url(../src/assets/back.jpg);
+}
+
+
 header {
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
     background-color: #289646;
     justify-content: space-between;
@@ -16,6 +22,7 @@ h1 {
 }
 
 #menu {
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
     left: -300px;
@@ -86,6 +93,8 @@ h1 {
     margin: 20px auto;
 }
 
+
+
 main {
     background-color: #f1f1f1;
     margin: 2.5% 15%;
@@ -99,6 +108,7 @@ p:last-child {
 }
 
 footer {
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
     background-color: #289646;
     color: #fff;
     text-align: center;
@@ -112,6 +122,7 @@ footer p {
 /* Estilos para las páginas "Registro" e "Iniciar sesión" */
 
 .close-form {
+    z-index: 2;
     color: #000;
     position: absolute;
     top: 20px;
@@ -128,6 +139,7 @@ footer p {
 }
 
 .formulario {
+    z-index: 2;
     background-color: #289646;
     position: fixed;
     top: 50%;
@@ -179,6 +191,7 @@ footer p {
 }
 
 .control {
+    z-index: 2;
     width: 100%;
     padding: 10px;
     margin-bottom: 16px;
@@ -193,3 +206,4 @@ footer p {
 }
 
 /* Estilos para el foro de ideas */
+
