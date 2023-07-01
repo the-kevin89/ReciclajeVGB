@@ -1,18 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+/* Estilos comunes */
 
-
-    --color-principal: #2a8041;
-    --color-principal-highlight: #34a151;
-    --text-color-highlight-hover: #81d4fd;
+body {
+    background-image: url(../src/assets/back.jpg);
+    background-size: 100%;;
+    background-attachment: fixed;
 }
 
-
 header {
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
-    background-color: var(--color-principal);
+    background-color: #289646;
     justify-content: space-between;
     color: #fff;
     padding: 25px;
@@ -23,22 +20,21 @@ h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 0;
-    font-size: 50px;
-}
-
-a {
-    text-decoration: none;
 }
 
 #menu {
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
-    left: -300px; /* Inicialmente oculto fuera del área visible */
+    left: -300px;
     width: 300px;
     height: 100%;
-    background-color: var(--color-principal);
+    background-color: #289646;
     transition: left 0.3s ease-in-out;
+}
+
+#menu.open {
+    left: 0;
 }
 
 #menu ul {
@@ -50,30 +46,25 @@ a {
     color: #fff;
     display: block;
     padding: 10px;
-    line-height: 1.5;
+    text-decoration: none;
 }
 
 #menu ul li a:hover {
-    background-color: var(--color-principal-highlight);
+    background-color: #34a151;
 }
 
-#menu.open {
-    left: 0; /* Mostrar el menú desplazándolo hacia la derecha */
-}
-
-#btn-menu, #btn-cerrar, #btn-cuenta, #btn-cuenta button {
+#btn-menu, #btn-cerrar {
     background: none;
     border: none;
     color: #fff;
-    cursor: pointer;
 }
 
 #btn-menu {
     font-size: 40px;
 }
 
-#btn-menu:hover{
-    color: var(--text-color-highlight-hover);
+#btn-menu:hover {
+    color: #81d4fd;
 }
 
 #btn-cerrar {
@@ -81,24 +72,20 @@ a {
     top: 10px;
     right: 10px;
     font-size: 30px;
-    width: 40px;
-    height: 40px;
 }
 
 #btn-cuenta {
     border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
     font-size: 20px;
-    border-radius: 10px;
-    height: fit-content;
-}
-
-#btn-cuenta:hover, #btn-cuenta button:hover {
-    border-color: var(--text-color-highlight-hover);
-    color: var(--text-color-highlight-hover);
-}
-
-#btn-cuenta button {
     padding: 10px;
+    border-radius: 10px;
+}
+
+#btn-cuenta:hover {
+    border-color: #81d4fd;
+    color: #81d4fd;
 }
 
 #logo {
@@ -108,16 +95,168 @@ a {
 }
 
 
+.contenedor {
+    background-color: #eee;
+    margin: 2.5% 15%;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p:last-child {
+    margin: 0;
+}
+
 footer {
-    background-color: var(--color-principal);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #289646;
     color: #fff;
     text-align: center;
     padding: 20px;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 footer p {
     margin-bottom: 0;
+}
+
+/* Estilos para las páginas "Registro" e "Iniciar sesión" */
+
+.close-form {
+    color: #000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    line-height: 0;
+}
+
+.close-form:hover {
+    color: #333;
+}
+
+.close-form i {
+    font-size: 40px;
+}
+
+.formulario {
+    background-color: #289646;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 30px;
+    color: #fff;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.formulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.formulario p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.formulario a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.formulario a:hover {
+    text-decoration: underline;
+}
+
+.formulario .form-btn {
+    width: 100%;
+    background-color: #34a853;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 16px 0;
+    transition: background-color 0.3s ease;
+}
+
+.formulario .form-btn:hover {
+    background-color: #3fb45e;
+}
+
+.formulario, .control, .form-btn {
+    border-radius: 4px;
+}
+
+.control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 2px solid #ccc;
+    font-size: 18px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.control:focus {
+    outline: none;
+    border-color: #289646;
+}
+
+/* Estilos para el foro de ideas */
+
+#fdiSUB {
+    margin-top: 2%;
+    color: #aaa;
+}
+#tu-mensaje {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 30px;
+    background-color: #289646;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.329);
+}
+
+#panel-de-mensaje {
+    background-color: #289646;
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+    width: 340px;
+    margin-bottom: 10px;
+}
+#panel-de-mensaje2 {
+    background-color: #289646;
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+    width: 340px;
+    margin-bottom: 15px;
+}
+#enviar-mensaje {
+    background-color: #289646;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#enviar-mensaje:hover {
+    border-color: #81d4fd;
+    color: #81d4fd;
+}
+
+#panel-de-mensaje::placeholder{
+    color: #fff;
+}
+#panel-de-mensaje2::placeholder{
+    color: #fff;
 }
