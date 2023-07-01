@@ -2,8 +2,9 @@
 
 body {
     background-image: url(../src/assets/back.jpg);
+    background-size: 100%;;
+    background-attachment: fixed;
 }
-
 
 header {
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
@@ -94,8 +95,7 @@ h1 {
 }
 
 
-
-main {
+.contenedor {
     background-color: #f1f1f1;
     margin: 2.5% 15%;
     padding: 30px;
@@ -122,7 +122,6 @@ footer p {
 /* Estilos para las páginas "Registro" e "Iniciar sesión" */
 
 .close-form {
-    z-index: 2;
     color: #000;
     position: absolute;
     top: 20px;
@@ -139,7 +138,6 @@ footer p {
 }
 
 .formulario {
-    z-index: 2;
     background-color: #289646;
     position: fixed;
     top: 50%;
@@ -191,7 +189,6 @@ footer p {
 }
 
 .control {
-    z-index: 2;
     width: 100%;
     padding: 10px;
     margin-bottom: 16px;
@@ -207,3 +204,24 @@ footer p {
 
 /* Estilos para el foro de ideas */
 
+#fdiSUB {
+    margin-top: 2%;
+    color: #aaa;
+}
+#tu-mensaje {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 30px;
+    background-color: #289646;
+}
+
+#panel-de-mensaje {
+    width: 300px;
+}
+#panel-de-mensaje2 {
+    height: auto;
+}
