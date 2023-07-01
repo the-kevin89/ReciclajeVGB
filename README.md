@@ -1,27 +1,20 @@
 # ReciclajeVGB
 
-Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 16.1.3.
+La aplicación web trata sobre la oncientización del reciclaje en Villa General Belgrano.
 
-## Servidor de desarrollo
+## Carpetas y archivos
 
-Ejecutá `ng serve` para iniciar un servidor de desarrollo. Navegá a `http://localhost:4200/`. La aplicación se va a recargar automáticamente si hacés cambios en los archivos fuente.
+La carpeta `src` contiene todos lo que tiene que ver con los archivos HTML, CSS, imágenes y módulos.
+El archivo `.gitignore` contiene el nombre de los archivos y carpetas que no se pasarán mediante Git.
+El archivo `angular.json` incluye las configuraciones del proyecto.
+El archivo `packages.json` describe las dependencias npm.
 
-## Andamiaje de código
+## Instalación del proyecto
 
-Ejecutá `ng generate component nombre-del-componente` para generar un nuevo componente. También podés usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Construcción
-
-Ejecutá `ng build` para compilar el proyecto. Los archivos compilados se almacenarán en el directorio `dist/`.
-
-## Ejecución de pruebas unitarias
-
-Ejecutá `ng test` para ejecutar las pruebas unitarias mediante [Karma](https://karma-runner.github.io).
-
-## Ejecución de pruebas end-to-end
-
-Ejecutá `ng e2e` para ejecutar las pruebas end-to-end mediante una plataforma de tu elección. Para usar este comando, primero tenés que agregar un paquete que implemente capacidades de pruebas end-to-end.
-
-## Ayuda adicional
-
-Para obtener más ayuda sobre Angular CLI, utilizá `ng help` o consultá la página de  [Resumen Y Referencia de Comandos de Angular](https://angular.io/cli).
+Para instalar el proyecto hacé lo siguiente:
+1. Abrir cmd en la ubicación donde querrás tener el proyecto.
+2. Escribir `git clone https://github.com/the-kevin89/ReciclajeVGB`
+3. Escribir `cd ReciclajeVGB` en el cmd.
+4. Escribir `npm install` y esperar que se instalen las dependencias.
+5. Escribir `ng serve` y esperar a que se cree el servidor local.
+6. En el navegador de tu preferencia escribir en la barra superior `http://localhost:4200`.
