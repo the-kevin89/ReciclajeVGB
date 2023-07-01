@@ -1,6 +1,6 @@
 # ReciclajeVGB
 
-La aplicación web trata sobre la oncientización del reciclaje en Villa General Belgrano.
+La aplicación web trata sobre la concientización del reciclaje en Villa General Belgrano.
 
 ## Carpetas y archivos
 
@@ -12,7 +12,7 @@ El archivo `packages.json` describe las dependencias npm.
 ## Instalación del proyecto
 
 Para instalar el proyecto hacé lo siguiente:
-1. Abrir cmd en la ubicación donde querrás tener el proyecto.
+1. Abrir cmd en la ubicación donde querás tener el proyecto.
 2. Escribir `git clone https://github.com/the-kevin89/ReciclajeVGB`
 3. Escribir `cd ReciclajeVGB` en el cmd.
 4. Escribir `npm install` y esperar que se instalen las dependencias.
