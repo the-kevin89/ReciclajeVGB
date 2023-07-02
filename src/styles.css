@@ -221,6 +221,8 @@ footer p {
 }
 
 #panel-de-mensaje {
+    outline-style: none;
+    color: #fff;
     background-color: #289646;
     border: 1px solid #fff;
     font-size: 20px;
@@ -231,6 +233,8 @@ footer p {
     margin-bottom: 10px;
 }
 #panel-de-mensaje2 {
+    outline-style: none;
+    color: #fff;
     background-color: #289646;
     border: 1px solid #fff;
     font-size: 20px;
