@@ -23,10 +23,10 @@ h1 {
 }
 
 #menu {
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
-    left: -300px;
+    left: -320px;
     width: 300px;
     height: 100%;
     background-color: #289646;
@@ -135,6 +135,7 @@ footer p {
 
 .close-form i {
     font-size: 40px;
+    color: #fff;
 }
 
 .formulario {
@@ -208,6 +209,7 @@ footer p {
     margin-top: 2%;
     color: #aaa;
 }
+
 #tu-mensaje {
     margin-bottom: 5%;
     margin-top: 5%;
@@ -220,7 +222,7 @@ footer p {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.329);
 }
 
-#panel-de-mensaje {
+#panel-de-mensaje, #panel-de-mensaje2 {
     outline-style: none;
     color: #fff;
     background-color: #289646;
@@ -228,39 +230,42 @@ footer p {
     font-size: 20px;
     padding: 10px;
     border-radius: 10px;
-
     width: 340px;
     margin-bottom: 10px;
 }
-#panel-de-mensaje2 {
-    outline-style: none;
-    color: #fff;
-    background-color: #289646;
-    border: 1px solid #fff;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 10px;
 
-    width: 340px;
-    margin-bottom: 15px;
+#panel-de-mensaje::placeholder, #panel-de-mensaje2::placeholder {
+    color: #ddd;
 }
+
 #enviar-mensaje {
     background-color: #289646;
     border: 1px solid #fff;
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    padding: 10px;
+    padding: 10px 20px;
+    margin-top: 5px;
     border-radius: 10px;
 }
+
 #enviar-mensaje:hover {
     border-color: #81d4fd;
     color: #81d4fd;
 }
 
-#panel-de-mensaje::placeholder{
-    color: #fff;
+.contenedor article {
+    background-color: #fff;
+    margin-bottom: 3.5%;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
-#panel-de-mensaje2::placeholder{
-    color: #fff;
+
+.contenedor article:hover {
+    box-shadow: 7.5px 7.5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor article:last-of-type {
+    margin-bottom: 0;
 }
