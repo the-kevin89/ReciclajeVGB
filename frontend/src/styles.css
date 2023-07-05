@@ -2,8 +2,9 @@
 
 body {
     background-image: url(../src/assets/back.jpg);
-    background-size: 100%;;
+    background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
 header {
@@ -45,7 +46,7 @@ h1 {
 #menu ul li a {
     color: #fff;
     display: block;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     text-decoration: none;
 }
 
@@ -60,7 +61,7 @@ h1 {
 }
 
 #btn-menu {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 #btn-menu:hover {
@@ -71,14 +72,14 @@ h1 {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 #btn-cuenta {
     border: 1px solid #fff;
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 10px;
     border-radius: 10px;
 }
@@ -94,13 +95,21 @@ h1 {
     margin: 20px auto;
 }
 
-
 .contenedor {
     background-color: #eee;
     margin: 2.5% 15%;
     padding: 30px;
     border-radius: 4px;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor h2 {
+    margin-bottom: 0.75rem;
+}
+
+.contenedor img {
+    max-width: 100%;
+    margin-bottom: 1.25rem;
 }
 
 p:last-child {
@@ -134,7 +143,7 @@ footer p {
 }
 
 .close-form i {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #fff;
 }
 
@@ -156,10 +165,9 @@ footer p {
 }
 
 .formulario p {
-    height: 40px;
     text-align: center;
     font-size: 18px;
-    line-height: 40px;
+    margin-top: 14px;
 }
 
 .formulario a {
@@ -194,7 +202,6 @@ footer p {
     padding: 10px;
     margin-bottom: 16px;
     border: 2px solid #ccc;
-    font-size: 18px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -211,12 +218,12 @@ footer p {
 }
 
 #tu-mensaje {
+    max-width: 50%;
     margin-bottom: 5%;
     margin-top: 5%;
     border-radius: 15px;
     top: 50%;
     left: 50%;
-    width: 400px;
     padding: 30px;
     background-color: #289646;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.329);
@@ -230,7 +237,7 @@ footer p {
     font-size: 20px;
     padding: 10px;
     border-radius: 10px;
-    width: 340px;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -269,4 +276,35 @@ footer p {
 
 .contenedor article:last-of-type {
     margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+    #tu-mensaje {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    span {
+        display: none;
+    }
+
+    #btn-cuenta {
+        border-width: 2px;
+        border-radius: 50%;
+        width: 52px;
+        text-align: center;
+    }
+
+    .formulario {
+        width: 90%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .formulario {
+        margin-top: 20px;
+    }
 }
