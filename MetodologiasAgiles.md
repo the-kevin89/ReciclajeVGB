@@ -18,6 +18,6 @@ Durante la última reunión de planificación de sprint en el proyecto Reciclaje
 
 3. **Estimación del esfuerzo**: El equipo de desarrollo estimó el esfuerzo requerido para cada elemento seleccionado. Se utilizó la técnica de estimación en puntos de historia para tener una idea aproximada del tamaño y la complejidad de cada tarea.
 
-4. **Definición de los objetivos del sprint**: Con base en los elementos seleccionados y las estimaciones de esfuerzo, se definieron los objetivos específicos a lograr durante el sprint. Se estableció un plan de trabajo con las tareas y las fechas de entrega previstas.
+4. **Definición de los objetivos del sprint**: En base a los elementos seleccionados y las estimaciones de esfuerzo, se definieron los objetivos específicos a lograr durante el sprint. Se estableció un plan de trabajo con las tareas y las fechas de entrega previstas.
 
 Durante el sprint, el equipo de desarrollo trabajó de forma colaborativa, revisando regularmente el progreso y realizando ajustes según fuera necesario.

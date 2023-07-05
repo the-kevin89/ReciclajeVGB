@@ -114,6 +114,7 @@ h1 {
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
+    background-color: #333;
 }
 
 .video-container iframe {
