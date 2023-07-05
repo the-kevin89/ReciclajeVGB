@@ -1,22 +1,23 @@
 # ReciclajeVGB
 
-⩥ Video: https://www.youtube.com/watch?v=Cs0RL6X1LZE
+¡Bienvenido a ReciclajeVGB! Somos tu plataforma para encarar la contaminación en Villa General Belgrano. Dale un vistazo a nuestras secciones para descubrir los lugares más afectados, aprender sobre el reciclaje y motivar a otros a dar una mano. Pronto, sumate a nuestro foro de ideas y registrate para acceder a contenido exclusivo. ¡Unite a ReciclajeVGB y juntos armemos un futuro sostenible para Villa General Belgrano!
 
-La aplicación web trata sobre la concientización del reciclaje en Villa General Belgrano.
+## Estructura del Repositorio
 
-## Carpetas y archivos
+El repositorio contiene los siguientes elementos:
 
-La carpeta `src` contiene todos lo que tiene que ver con los archivos HTML, CSS, imágenes y módulos.
-El archivo `.gitignore` contiene el nombre de los archivos y carpetas que no se pasarán mediante Git.
-El archivo `angular.json` incluye las configuraciones del proyecto.
-El archivo `packages.json` describe las dependencias npm.
+- Carpeta "frontend": Proyecto de Angular con las páginas de la aplicación web. Contiene las interfaces y lógica del lado del cliente.
 
-## Instalación del proyecto
+- Carpeta "backend":
+  - Archivo "inicio_sesion.php": Archivo PHP que maneja la lógica de inicio de sesión.
+  - Archivo "registro.php": Archivo PHP que maneja la lógica de registro de nuevos usuarios.
 
-Para instalar el proyecto hacé lo siguiente:
-1. Abrir cmd en la ubicación donde querás tener el proyecto.
-2. Escribir `git clone https://github.com/the-kevin89/ReciclajeVGB`
-3. Escribir `cd ReciclajeVGB` en el cmd.
-4. Escribir `npm install` y esperar que se instalen las dependencias.
-5. Escribir `ng serve` y esperar a que se cree el servidor local.
-6. En el navegador de tu preferencia escribir en la barra superior `http://localhost:4200`.
+## Instalación
+
+Seguí estos pasos para instalar y ejecutar el proyecto ReciclajeVGB:
+
+1. Cloná este repositorio en tu computadora usando `git clone https://github.com/the-kevin89/ReciclajeVGB`
+2. Navegá hasta la carpeta "frontend"
+3. Instalá las dependencias del proyecto ejecutando `npm install` en una terminal
+4. Ejecutá la aplicación en un servidor de desarrollo usando `ng serve`
+5. Abrí tu navegador web y accedé a la siguiente URL: `http://localhost:4200`
