@@ -2,6 +2,14 @@
 
 ¡Bienvenido a ReciclajeVGB! Somos tu plataforma para encarar la contaminación en Villa General Belgrano. Dale un vistazo a nuestras secciones para descubrir los lugares más afectados, aprender sobre el reciclaje y motivar a otros a dar una mano. Pronto, sumate a nuestro foro de ideas y registrate para acceder a contenido exclusivo. ¡Unite a ReciclajeVGB y juntos armemos un futuro sostenible para Villa General Belgrano!
 
+## Integrantes del Proyecto
+
+- Benjamín Kaufmann
+- Gabriel Laurini Santino
+- Kevin Lucio Pérez Palau
+- Leandro Monina Marsicano
+- Máximo Becker
+
 ## Estructura del Repositorio
 
 El repositorio contiene los siguientes elementos:
