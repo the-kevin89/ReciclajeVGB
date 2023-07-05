@@ -257,6 +257,7 @@ footer p {
     border-radius: 10px;
     width: 100%;
     margin-bottom: 10px;
+    resize: none;
 }
 
 #panel-de-mensaje::placeholder, #panel-de-mensaje2::placeholder {
