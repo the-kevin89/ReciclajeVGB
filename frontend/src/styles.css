@@ -1,12 +1,107 @@
-/* You can add global styles to this file, and also import other style files */
-#menu {
+/* Estilos comunes */
+
+body {
+    background-image: url(assets/back.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    background-color: #289646;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header h1 {
     position: absolute;
-    top: 30px;
-    left: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+#btn-menu {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 40px;
+    padding: 0;
+    line-height: 0;
+}
+
+#btn-menu:hover {
+    color: #81d4fd;
+}
+
+#btn-cuenta {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    line-height: 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#btn-cuenta i {
+    margin-right: 5px;
+}
+
+#btn-cuenta:hover {
+    color: #81d4fd;
+    border-color: #81d4fd;
+}
+
+#menu {
+    position: fixed;
+    left: -320px;
     width: 300px;
-    height: calc(100% - 30px);
+    height: 100%;
+    background-color: #289646;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 #menu.open {
     left: 0;
+}
+
+#menu img {
+    width: 120px;
+    display: block;
+    margin: 20px auto;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+#menu ul li a:hover {
+    background-color: #34a151;
+}
+
+footer {
+    background-color: #289646;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
 }
