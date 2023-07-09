@@ -17,7 +17,8 @@ const routes: Routes = [
   { path: 'motivar-ayudar', component: MotivarAyudarComponent },
   { path: 'foro-ideas', component: ForoIdeasComponent },
   { path: 'registro', component: RegistroComponent },
-  { path: 'iniciar-sesion', component: IniciarSesionComponent }
+  { path: 'iniciar-sesion', component: IniciarSesionComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
