@@ -116,3 +116,77 @@ footer p {
 img {
     max-width: 100%;
 }
+
+/* Páginas de "Registro" e "Iniciar sesión" */
+
+.close-form {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    line-height: 0;
+    color: #fff;
+    font-size: 40px;
+}
+
+.close-form:hover {
+    color: #81d4fd;
+}
+
+.form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    background-color: #289646;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.form h2 {
+    margin-bottom: 1.25rem;
+}
+
+.control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 2px solid #ccc;
+}
+
+.control:focus {
+    outline: none;
+    border-color: #289646;
+}
+
+.control, .form-btn {
+    border-radius: 0.375rem;
+}
+
+.form-btn {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    background-color: #34a853;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+    background-color: #3fb45e;
+}
+
+.form p {
+    text-align: center;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+}
+
+.form a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}

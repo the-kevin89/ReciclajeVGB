@@ -20,5 +20,9 @@ export class AppComponent {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
+
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
 }
