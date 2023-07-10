@@ -7,15 +7,17 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'ReciclajeVGB';
+
   isMenuOpen: boolean = false;
 
   shouldShow(): boolean {
     const currentURL = this.router.url;
-    return !(currentURL.includes('/iniciar-sesion') || currentURL.includes('/registro'));
+    return !(currentURL.includes('iniciar-sesion') || currentURL.includes('registro'));
   }
 
-  openMenu() {
-    this.isMenuOpen = true;
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
   closeMenu() {

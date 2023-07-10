@@ -16,10 +16,6 @@ El repositorio contiene los siguientes elementos:
 
 - Carpeta "frontend": Proyecto de Angular con las páginas de la aplicación web. Contiene las interfaces y lógica del lado del cliente.
 
-- Carpeta "backend":
-  - Archivo "inicio_sesion.php": Archivo PHP que maneja la lógica de inicio de sesión.
-  - Archivo "registro.php": Archivo PHP que maneja la lógica de registro de nuevos usuarios.
-
 ## Instalación
 
 Seguí estos pasos para instalar y ejecutar el proyecto ReciclajeVGB:

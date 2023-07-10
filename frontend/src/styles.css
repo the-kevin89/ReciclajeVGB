@@ -1,132 +1,105 @@
 /* Estilos comunes */
 
 body {
-    background-image: url(../src/assets/back.jpg);
+    background-image: url(assets/back.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
 
 header {
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
     background-color: #289646;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    display: flex;
     justify-content: space-between;
     color: #fff;
-    padding: 25px;
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
-h1 {
+header h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-}
-
-#menu {
-    z-index: 1;
-    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    top: 0;
-    left: -320px;
-    width: 300px;
-    height: 100%;
-    background-color: #289646;
-    transition: left 0.3s ease-in-out;
-}
-
-#menu.open {
-    left: 0;
-}
-
-#menu ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#menu ul li a {
-    color: #fff;
-    display: block;
-    padding: 10px 10px 10px 20px;
-    text-decoration: none;
-}
-
-#menu ul li a:hover {
-    background-color: #34a151;
-}
-
-#btn-menu, #btn-cerrar {
-    background: none;
-    border: none;
-    color: #fff;
+    margin: 0;
 }
 
 #btn-menu {
-    font-size: 2.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 40px;
+    padding: 0;
+    line-height: 0;
 }
 
 #btn-menu:hover {
     color: #81d4fd;
 }
 
-#btn-cerrar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.875rem;
-}
-
 #btn-cuenta {
-    border: 1px solid #fff;
     color: #fff;
     text-decoration: none;
-    font-size: 1.25rem;
-    padding: 10px;
+    border: 1px solid #fff;
+    line-height: 0;
+    padding: 15px 10px;
     border-radius: 10px;
+    font-size: 20px;
+}
+
+#btn-cuenta i {
+    margin-right: 5px;
 }
 
 #btn-cuenta:hover {
-    border-color: #81d4fd;
     color: #81d4fd;
+    border-color: #81d4fd;
 }
 
-#logo {
+#menu {
+    position: fixed;
+    left: -320px;
+    width: 300px;
+    height: 100%;
+    background-color: #289646;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#menu.open {
+    left: 0;
+}
+
+#menu img {
     width: 120px;
     display: block;
     margin: 20px auto;
 }
 
-.contenedor {
-    background-color: #eee;
-    margin: 2.5% 15%;
-    padding: 30px;
-    border-radius: 4px;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
+#menu ul {
+    list-style: none;
+    padding: 0;
 }
 
-.contenedor h2 {
-    margin-bottom: 0.75rem;
+#menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
 }
 
-.contenedor iframe {
-    background-color: #333;
-    width: 100%;
-    aspect-ratio: 16/9;
+#menu ul li a:hover {
+    background-color: #34a151;
 }
 
-.contenedor img {
-    max-width: 100%;
-    margin-bottom: 1.25rem;
-}
-
-p:last-child {
-    margin: 0;
+.container {
+    background-color: #f1f1f1;
 }
 
 footer {
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
     background-color: #289646;
     color: #fff;
     text-align: center;
@@ -134,76 +107,49 @@ footer {
 }
 
 footer p {
-    margin-bottom: 0;
+    margin: 0;
 }
 
-/* Estilos para las páginas "Registro" e "Iniciar sesión" */
+.container iframe {
+    background-color: #333;
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Páginas de "Registro" e "Iniciar sesión" */
 
 .close-form {
-    color: #000;
     position: absolute;
     top: 20px;
     right: 20px;
     line-height: 0;
+    color: #fff;
+    font-size: 40px;
 }
 
 .close-form:hover {
-    color: #333;
+    color: #81d4fd;
 }
 
-.close-form i {
-    font-size: 2.5rem;
-    color: #fff;
-}
-
-.formulario {
-    background-color: #289646;
+.form {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
-    padding: 30px;
+    max-width: 400px;
+    background-color: #289646;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     color: #fff;
-    box-shadow: 7px 13px 37px #000;
 }
 
-.formulario h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.formulario p {
+.form h2 {
+    margin-bottom: 1.25rem;
     text-align: center;
-    font-size: 18px;
-    margin-top: 14px;
-}
-
-.formulario a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.formulario a:hover {
-    text-decoration: underline;
-}
-
-.formulario .form-btn {
-    width: 100%;
-    background-color: #34a853;
-    border: none;
-    padding: 12px;
-    color: #fff;
-    margin: 16px 0;
-    transition: background-color 0.3s ease;
-}
-
-.formulario .form-btn:hover {
-    background-color: #3fb45e;
-}
-
-.formulario, .control, .form-btn {
-    border-radius: 4px;
 }
 
 .control {
@@ -211,7 +157,6 @@ footer p {
     padding: 10px;
     margin-bottom: 16px;
     border: 2px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .control:focus {
@@ -219,102 +164,77 @@ footer p {
     border-color: #289646;
 }
 
-/* Estilos para el foro de ideas */
-
-#fdiSUB {
-    margin-top: 2%;
-    color: #aaa;
+.control, .form-btn {
+    border-radius: 0.375rem;
 }
 
-#tu-mensaje {
-    max-width: 50%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    border-radius: 15px;
-    top: 50%;
-    left: 50%;
-    padding: 30px;
-    background-color: #289646;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.329);
-}
-
-#panel-de-mensaje, #panel-de-mensaje2 {
-    outline-style: none;
-    color: #fff;
-    background-color: #289646;
-    border: 1px solid #fff;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 10px;
+.form-btn {
     width: 100%;
-    margin-bottom: 10px;
+    border: none;
+    padding: 12px;
+    background-color: #34a853;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+    background-color: #3fb45e;
+}
+
+.form p {
+    text-align: center;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+}
+
+.form a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del foro */
+
+#foro-subtitulo {
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+#postear {
+    background-color: #289646;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+}
+
+#mensaje {
     resize: none;
 }
 
-#panel-de-mensaje::placeholder, #panel-de-mensaje2::placeholder {
-    color: #ddd;
-}
-
-#enviar-mensaje {
-    background-color: #289646;
-    border: 1px solid #fff;
-    color: #fff;
-    text-decoration: none;
+#titulo, #mensaje {
     font-size: 20px;
-    padding: 10px 20px;
-    margin-top: 5px;
-    border-radius: 10px;
 }
 
-#enviar-mensaje:hover {
-    border-color: #81d4fd;
-    color: #81d4fd;
-}
-
-.contenedor article {
+.container article {
+    box-shadow: 3.5px 3.5px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.15s;
     background-color: #fff;
-    margin-bottom: 3.5%;
-    padding: 15px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    transition: all 0.2s ease;
 }
 
-.contenedor article:hover {
-    box-shadow: 7.5px 7.5px 10px rgba(0, 0, 0, 0.2);
+.container article:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.contenedor article:last-of-type {
-    margin-bottom: 0;
+#nombre-usuario {
+    margin-bottom: 0.25rem;
 }
 
-@media (max-width: 900px) {
-    #tu-mensaje {
-        max-width: none;
-        width: 100%;
-    }
+#fecha {
+    color: #aaa;
 }
 
-@media (max-width: 767px) {
-    span {
-        display: none;
-    }
-
-    #btn-cuenta {
-        border-width: 2px;
-        border-radius: 50%;
-        width: 52px;
-        text-align: center;
-    }
-
-    .formulario {
-        width: 90%;
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 375px) {
-    .formulario {
-        margin-top: 20px;
-    }
+#contenido {
+    margin-top: 0.6rem;
 }

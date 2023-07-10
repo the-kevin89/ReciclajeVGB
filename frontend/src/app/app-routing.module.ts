@@ -10,8 +10,7 @@ import { RegistroComponent } from './pages/registro/registro.component';
 import { IniciarSesionComponent } from './pages/iniciar-sesion/iniciar-sesion.component';
 
 const routes: Routes = [
-  { path: 'inicio', component: InicioComponent },
-  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+  { path: '', component: InicioComponent },
   { path: 'problema', component: ProblemaComponent },
   { path: 'areas-contaminadas', component: AreasContaminadasComponent },
   { path: 'reciclar-basura', component: ReciclarBasuraComponent },
@@ -19,7 +18,7 @@ const routes: Routes = [
   { path: 'foro-ideas', component: ForoIdeasComponent },
   { path: 'registro', component: RegistroComponent },
   { path: 'iniciar-sesion', component: IniciarSesionComponent },
-  { path: '**', redirectTo: 'inicio' }
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
