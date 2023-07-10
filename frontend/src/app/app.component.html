@@ -7,12 +7,12 @@
 <nav id="menu" [ngClass]="{'open': isMenuOpen}" *ngIf="shouldShow()">
     <img src="../assets/logo.png" alt="Logo">
     <ul>
-        <li><a routerLink="" (click)="closeMenu()">Inicio</a></li>
-        <li><a routerLink="problema" (click)="closeMenu()">¿Por qué es un problema?</a></li>
-        <li><a routerLink="areas-contaminadas" (click)="closeMenu()">Áreas más contaminadas</a></li>
-        <li><a routerLink="reciclar-basura" (click)="closeMenu()">Reciclar la basura</a></li>
-        <li><a routerLink="motivar-ayudar" (click)="closeMenu()">Motivar a otros a ayudar</a></li>
-        <li><a routerLink="foro-ideas" (click)="closeMenu()">Foro de ideas</a></li>
+        <li><a routerLink="" (click)="closeMenu()" tabindex="-1">Inicio</a></li>
+        <li><a routerLink="problema" (click)="closeMenu()" tabindex="-1">¿Por qué es un problema?</a></li>
+        <li><a routerLink="areas-contaminadas" (click)="closeMenu()" tabindex="-1">Áreas más contaminadas</a></li>
+        <li><a routerLink="reciclar-basura" (click)="closeMenu()" tabindex="-1">Reciclar la basura</a></li>
+        <li><a routerLink="motivar-ayudar" (click)="closeMenu()" tabindex="-1">Motivar a otros a ayudar</a></li>
+        <li><a routerLink="foro-ideas" (click)="closeMenu()" tabindex="-1">Foro de ideas</a></li>
     </ul>
 </nav>
 
